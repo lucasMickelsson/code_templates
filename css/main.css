@@ -1,0 +1,86 @@
+body{
+    margin:0px;
+}
+.navbar {
+  background-color: transparent;
+  transition: opacity 0.5s ease;
+    flex-grow: 0; /* Take up remaining space */
+    display: flex;
+    justify-content: space-between; /* Spreads the children apart */
+    align-items: center; /* Align items vertically */
+    padding:10px;
+  }
+  
+  .logo {
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    margin-right: 10px; /* Adjust margin as needed */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar ul li {
+    list-style-type: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: blue;
+  }
+  .space{
+    margin-bottom: 800px;
+    color:white;
+  }
+  .space-2{
+    color:black;
+    margin-bottom: 800px;
+  }
+  button{
+    margin-right: 10px;
+    background-color: white;
+    transition: opacity 0.5s ease;
+    width:170px;
+    height: 43px;
+    padding: 8px 26px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    white-space:nowrap;
+    opacity: 1;
+  }
+  
+  #logoStyle {
+    width: 100px;
+    background-color: white;
+  }
+  #headers {
+    background-color: transparent;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
+  }
+  .scrollmenu {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    white-space: nowrap;
+    position: fixed;
+    top: 0; /* Place the navbar at the top of the screen */
+    left: 0;
+    background-color: transparent;
+    padding: 10px 0; /* Add some padding for better appearance */
+}
+.scrollUp {
+  background-color: transparent; /* or any other initial color */
+  transition: background-color 0.5s ease; /* Adjust the duration as needed */
+}
+.scrollUp.active {
+  background-color: black; /* Change to black to fade in */
+}
