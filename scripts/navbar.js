@@ -1,4 +1,6 @@
 let lastScrollTop = 0;
+const blackLogo= "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(262deg) brightness(101%) contrast(105%)";
+const whiteLogo= "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(105%) contrast(104%)";
 
 window.addEventListener("scroll", function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -20,10 +22,11 @@ window.addEventListener("scroll", function() {
     if (this.window.scrollY >3555 && scrollTop > lastScrollTop) {
        navbarbutton.style.backgroundColor="black";
        navbarbutton.style.color="white";
+       logo.style.filter = blackLogo;
     } else {
         navbarbutton.style.backgroundColor="white";
         navbarbutton.style.color="black";
-        logo.style.backgroundColor="white";
+        logo.style.filter= whiteLogo;
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
