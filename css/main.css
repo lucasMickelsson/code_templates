@@ -8,7 +8,6 @@ body{
     display: flex;
     justify-content: space-between; /* Spreads the children apart */
     align-items: center; /* Align items vertically */
-    padding:10px;
   }
   
   .logo {
@@ -19,7 +18,6 @@ body{
     display: flex;
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center the items vertically */
-    margin-right: 10px; /* Adjust margin as needed */
     padding: 0; /* Remove default padding */
   }
   
@@ -31,6 +29,7 @@ body{
   .navbar a {
     color: white;
     font-weight: bold;
+    font-size: 17px;
     text-decoration: none;
   }
   
@@ -45,18 +44,29 @@ body{
     color:black;
     margin-bottom: 800px;
   }
-  button{
+  .rightButton{
     margin-right: 10px;
     background-color: white;
     transition: opacity 0.5s ease;
-    width:170px;
-    height: 43px;
-    padding: 8px 26px;
+    width:140px;
+    height: 41px;
+    padding: 8px 20px;
     border: none;
     border-radius: 25px;
     font-size: 20px;
     white-space:nowrap;
     opacity: 1;
+  }
+  .navigationButton{
+    all: unset;
+    box-sizing: border-box;
+    font-size: 21px;
+    line-height: 22px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   #logoStyle {
@@ -68,14 +78,14 @@ body{
     transition: opacity 0.5s ease; /* Add a transition for opacity */
   }
   .scrollmenu {
-    width: 100%;
+    width: 99%;
     overflow-x: auto; /* Enable horizontal scrolling if needed */
     white-space: nowrap;
     position: fixed;
     top: 0; /* Place the navbar at the top of the screen */
     left: 0;
     background-color: transparent;
-    padding: 10px 0; /* Add some padding for better appearance */
+    padding: 3px 0; /* Add some padding for better appearance */
 }
 .scrollUp {
   background-color: transparent; /* or any other initial color */
