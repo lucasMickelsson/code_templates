@@ -25,7 +25,7 @@ body{
   
   .navbar ul li {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 4px;
   }
   
   .navbar .middlebutton {
@@ -72,3 +72,4 @@ body{
 .scrollUp.active {
   background-color: black; /* Change to black to fade in */
 }
+
