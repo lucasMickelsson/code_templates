@@ -1,0 +1,24 @@
+.lightblue:hover {
+    background-color: #89b9ff;
+    color:black;
+  }
+  .darkblue:hover {
+    background-color: #197cff;
+    color:black;
+  }
+  .green:hover{
+    background-color: #4eb460;
+    color:black;
+  }
+  .yellow:hover{
+    background-color: #ffd044;
+    color:black;
+  }
+  .red:hover{
+    background-color: #f95740;
+    color:black;
+  }
+  .lightgreen:hover{
+    background-color: #1ce615;
+    color:black;
+  }

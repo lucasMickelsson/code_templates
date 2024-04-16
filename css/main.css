@@ -38,10 +38,6 @@ body{
     border-radius: 6px;
     cursor: pointer;
   }
-  
-  .navbar .middlebutton:hover {
-    background-color: #89b9ff;
-  }
   .space{
     margin-bottom: 800px;
     color:white;
