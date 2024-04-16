@@ -3,35 +3,11 @@ const blackLogo= "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
 const whiteLogo= "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(105%) contrast(104%)";
 
 window.addEventListener("scroll", function() {
-    let hasReachedDiv=false;
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
     const headers= this.document.getElementById("headers");
-    const demobutton= this.document.querySelector(".demoButton");
-    const logo = this.document.getElementById("logoStyle");
     const navbar = document.querySelector(".navbar");
-    const target = document.querySelector(".target");
-    //const targetPosition= target.getBoundingClientRect().top;
-    //const checkPosition= navbar.getBoundingClientRect().bottom;
-    const checkDivs= this.document.querySelectorAll(".target");
 
-    for(let i=0; i< checkDivs.length; i++){
-        const checkDiv= checkDivs[i];
-        const targetPosition= checkDiv.getBoundingClientRect().top;
-        const bottomTargetPosition= checkDiv.getBoundingClientRect().bottom+40;
-        const currentPosition= navbar.getBoundingClientRect().bottom-43;
-        console.log("welcome item");
-
-        if (currentPosition > targetPosition && currentPosition< bottomTargetPosition && scrollTop > lastScrollTop) {
-            console.log("welcome item in if");
-            demobutton.classList.add("demoButtonSec");
-           logo.style.filter = blackLogo;
-           break;
-        } else {
-            console.log("found item in else");
-            demobutton.classList.remove("demoButtonSec");
-            logo.style.filter= whiteLogo;
-        }
-    }
+    checkTargetDivs(navbar, scrollTop, lastScrollTop);
 
     if (scrollTop > lastScrollTop) {
         // User is scrolling down
@@ -42,13 +18,27 @@ window.addEventListener("scroll", function() {
         headers.style.opacity="1";
         navbar.classList.add("scrollUp", "active");
     }
-    // If the background color is white and we scroll down
-    /*if (checkPosition-43 > targetPosition && scrollTop > lastScrollTop) {
-        demobutton.classList.add("demoButtonSec");
-       logo.style.filter = blackLogo;
-    } else {
-        demobutton.classList.remove("demoButtonSec");
-        logo.style.filter= whiteLogo;
-    }*/
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
+
+// Check which of th target divs we currently are scrolling inside
+function checkTargetDivs(navbar, scrollTop, lastScrollTop){
+    const demobutton= this.document.querySelector(".demoButton");
+    const logo = this.document.getElementById("logoStyle");
+    const checkDivs= this.document.querySelectorAll(".target");
+
+    for(let i=0; i< checkDivs.length; i++){
+        const checkDiv= checkDivs[i];
+        const targetPosition= checkDiv.getBoundingClientRect().top;
+        const bottomTargetPosition= checkDiv.getBoundingClientRect().bottom+40;
+        const currentPosition= navbar.getBoundingClientRect().bottom-43;
+        if (currentPosition > targetPosition && currentPosition< bottomTargetPosition && scrollTop > lastScrollTop) {
+            demobutton.classList.add("demoButtonSec");
+           logo.style.filter = blackLogo;
+           break;
+        } else {
+            demobutton.classList.remove("demoButtonSec");
+            logo.style.filter= whiteLogo;
+        }
+    }
+}
