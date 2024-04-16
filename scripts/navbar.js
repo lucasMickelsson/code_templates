@@ -17,7 +17,7 @@ window.addEventListener("scroll", function() {
     for(let i=0; i< checkDivs.length; i++){
         const checkDiv= checkDivs[i];
         const targetPosition= checkDiv.getBoundingClientRect().top;
-        const bottomTargetPosition= checkDiv.getBoundingClientRect().bottom;
+        const bottomTargetPosition= checkDiv.getBoundingClientRect().bottom+40;
         const currentPosition= navbar.getBoundingClientRect().bottom-43;
         console.log("welcome item");
 
