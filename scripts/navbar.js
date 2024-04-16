@@ -5,7 +5,7 @@ const whiteLogo= "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0
 window.addEventListener("scroll", function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
     const headers= this.document.getElementById("headers");
-    const navbarbutton= this.document.getElementById("navbarbutton");
+    const demobutton= this.document.querySelector(".demoButton");
     const logo = this.document.getElementById("logoStyle");
     const navbar = document.querySelector(".navbar");
 
@@ -20,12 +20,10 @@ window.addEventListener("scroll", function() {
     }
     // If the background color is white and we scroll down
     if (this.window.scrollY >3555 && scrollTop > lastScrollTop) {
-       navbarbutton.style.backgroundColor="black";
-       navbarbutton.style.color="white";
+        demobutton.classList.add("demoButtonSec");
        logo.style.filter = blackLogo;
     } else {
-        navbarbutton.style.backgroundColor="white";
-        navbarbutton.style.color="black";
+        demobutton.classList.remove("demoButtonSec");
         logo.style.filter= whiteLogo;
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;

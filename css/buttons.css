@@ -1,0 +1,57 @@
+.lib:hover {
+    background-color: #89b9ff;
+    color:black;
+  }
+  .dab:hover {
+    background-color: #197cff;
+    color:black;
+  }
+  .green:hover{
+    background-color: #4eb460;
+    color:black;
+  }
+  .yellow:hover{
+    background-color: #ffd044;
+    color:black;
+  }
+  .red:hover{
+    background-color: #f95740;
+    color:black;
+  }
+  .lig:hover{
+    background-color: #1ce615;
+    color:black;
+  }
+
+  .demoButton {
+    margin-right: 10px;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    width: 170px;
+    height: 43px;
+    padding: 8px 26px;
+    border: 2px solid white; /* White border */
+    border-radius: 25px;
+    font-size: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: black; /* Black text color */
+  }
+  
+  .demoButton:hover {
+    background-color: black; /* Dark background color */
+    color: white; /* White text color */
+    border-color: white; /* White border color */
+  }
+
+  .demoButtonSec {
+    background-color: black;
+    border: 2px solid black; /* White border */
+    color: white; /* Black text color */
+  }
+  
+  .demoButtonSec:hover {
+    background-color: white; /* Dark background color */
+    color: black; /* White text color */
+    border-color: black; /* White border color */
+  }
