@@ -1,0 +1,105 @@
+/* Basic table styling */
+table {
+    width: 95%;
+    border-spacing: 0;
+    border-collapse: separate; /* Use separate to handle rounded corners */
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-left: 40px;
+    margin-right: 30px;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+table:hover{
+    cursor: pointer;
+}
+
+/* Apply rounded corners to the table header */
+thead th:first-child {
+    border-top-left-radius: 10px; /* Top-left corner */
+}
+
+thead th:last-child {
+    border-top-right-radius: 10px; /* Top-right corner */
+}
+
+/* Apply rounded corners to the table footer if present */
+tfoot td:first-child {
+    border-bottom-left-radius: 10px; /* Bottom-left corner */
+}
+
+tfoot td:last-child {
+    border-bottom-right-radius: 10px; /* Bottom-right corner */
+}
+
+/* Style table cells */
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Ensure no border collapse issue with rounded corners */
+th:first-child, td:first-child {
+    border-left: 0; /* Avoid overlap */
+}
+
+th:last-child, td:last-child {
+    border-right: 0; /* Avoid overlap */
+}
+
+/* Table header styling */
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    color: rgb(84, 191, 84);
+}
+
+/* Table cells styling */
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    width: 20%;
+}
+
+/* Image styling */
+td img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
