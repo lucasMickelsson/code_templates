@@ -10,8 +10,8 @@ export default function CreatePost() {
   const [errorMessage, setErrorMessage] = useState('');
   const router = useRouter();
 
-  const username = 'lucas.mickelsson00@gmail.com';
-  const password = 'Rotebro3!?';
+  const username = 'your_username';
+  const password = 'your_password';
   const authHeader = 'Basic ' + Buffer.from(username + ':' + password).toString('base64');
 
   const handleSubmit = async (e) => {

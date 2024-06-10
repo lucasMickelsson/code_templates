@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). In this application the user can store posts and fetch posts from Wordpress backend Rest API.
 
 ## Getting Started
 
@@ -18,7 +18,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## WordPress Backend with CPT UI and JSON Basic Authentication
+
+This application utilizes a WordPress backend with Custom Post Types UI (CPT UI) plugin and JSON Basic Authentication plugin. These plugins allow the application to interact with the WordPress REST API to store and fetch posts.
+
+### Setting Up WordPress Locally
+
+To run this application properly, you'll need to set up a WordPress instance locally with the following configurations:
+
+1. Install and activate the Custom Post Types UI (CPT UI) plugin in your WordPress instance.
+2. Create custom post types as needed using the CPT UI plugin.
+3. Install and activate the JSON Basic Authentication plugin in your WordPress instance to enable basic authentication for the REST API.
+4. Ensure that your WordPress instance is running locally on `http://localhost:your_port`.
+
+### Storing and Fetching Posts
+
+Once your WordPress instance is set up locally with the specified plugins, the application can store and fetch posts using the WordPress REST API.
+
+### Note
+
+Make sure to adjust the WordPress API endpoint URL in the application code (`app/components/LoadPosts.js`) to match your local WordPress instance URL.
 
 ## Learn More
 
