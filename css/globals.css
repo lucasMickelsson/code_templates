@@ -1,0 +1,54 @@
+    html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    margin:0;
+  }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+}
+  
+  select {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  select:focus,
+  select:focus-visible,
+  select:focus-within {
+    outline: none;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  cite {
+    font-style: normal;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Initial background color */
+    transition: background-color 0.8s ease, color 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  footer {
+    display: block;
+    unicode-bidi: isolate;
+    padding: 144 0 24;
+}
+footer a{
+    padding-bottom: 8px;
+}
+  #headers {
+    background-color: transparent;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
+  }
+  
