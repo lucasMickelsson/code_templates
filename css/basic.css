@@ -369,6 +369,10 @@
     left: 650px;
     top: 900px;
   }
+  .absolute-dating{
+    left: -100px; 
+    top: 1470px;
+  }
   .absolute-mission{
     left: 550px; 
     top:1150px;
@@ -429,7 +433,7 @@
   }
   .absolute-dating-2{
     left: 380px; 
-    top: 4200px;
+    top: 4300px;
     width: 430px;
   }
 }
@@ -609,9 +613,20 @@
     text-align: center;
   }
 }
+@media (max-width: 1924px) {
+  .center-2{
+    text-align: center;
+  }
+  .margin-top-300{
+    margin-top: 300px;
+  }
+}
 @media (max-width: 992px) {
   .center-2{
     text-align: center;
+  }
+  .margin-top-300{
+    margin-top: 0px;
   }
 }
 
