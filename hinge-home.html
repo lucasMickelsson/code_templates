@@ -110,43 +110,46 @@
       </div>
 
       <div
-        class="main-container"
+        class="main-container ml-250"
         style="margin-top: 100px; margin-bottom: 120px"
       >
-        <div class="py-12 ml-250">
-          <div class="sans-base-medium text-aubergine fade-in">
+        <div class="content">
+          <div class="text-section sans-base-medium text-aubergine fade-in">
             Our approach
           </div>
-          <h2 class="serif-4xl-semibold mt-10" style="animation-delay: 175ms">
+          <h2
+            class="heading serif-4xl-semibold mt-10"
+            style="animation-delay: 175ms"
+          >
             Go on your last<br />
             first date.
           </h2>
         </div>
       </div>
       <img
-        class="absolute"
+        class="responsive-image absolute"
         src="images/svg-1.svg"
         alt="svg image"
-        style="left: 830px; top: 1000px"
       />
-      <div class="right-aligned-container-1 mr-350">
+      <div class="right-aligned-container-1">
         <p class="sans-base-regular-grey wrap-word">
           Hinge is built on the belief that anyone looking for love should be
           able to find it. It's also built on an acclaimed Nobel-Prize-winning
           algorithm, so we can succeed in getting you out on promising dates,
           not keeping you on the app.
         </p>
-
-        <button class="knapp-2 mr-280 mt-16">How we do it</button>
+        <button class="knapp-2">How we do it</button>
       </div>
 
-      <div class="main-container py-16 mr-100 justify-end mb-100">
+      <div
+        class="main-container main-container-top py-16 mr-100 justify-end mb-100"
+      >
         <div class="py-12 ml-250">
           <img
-            class="absolute"
+            class="absolute-dating"
             src="images/hinge-background-2.jpg"
             alt="Dating Hands"
-            style="left: -140px; top: 1560px; max-width: 860px"
+            style="position: absolute"
           />
           <div class="animate-fade-up" style="animation-delay: 175ms">
             <div class="sans-base-medium text-aubergine fade-in mt-400">
@@ -171,38 +174,45 @@
       </div>
 
       <div class="bg-black target">
-        <div class="py-16 ml-100 mr-100">
-          <div class="sans-base-medium text-light-purple mt-70 mb-200">
+        <div class="content-wrapper py-16 mx-100">
+          <div
+            class="sans-base-medium sans-base-medium-responsive text-light-purple mt-70 mb-100"
+          >
             What Our Users Say
           </div>
 
           <div class="carousel-container">
             <div class="quote-slide active" id="slide-1">
               <img class="white-svg" src="images/citation.svg" alt="citation" />
-              <p class="serif-xl-regular">
+              <p class="serif-xl-regular serif-xl-regular-responsive">
                 Other dating apps were like shooting fish in a barrel. But my
                 girlfriend and I clicked right away on Hinge, and the
                 conversation was effortless. We've been together for over a
                 year.
               </p>
-              <p class="sans-base-medium">Jake C.</p>
+              <p class="sans-base-medium sans-base-medium-responsive">
+                Jake C.
+              </p>
             </div>
             <div class="quote-slide" id="slide-2">
               <img class="white-svg" src="images/citation.svg" alt="citation" />
-              <p class="serif-xl-regular">
+              <p class="serif-xl-regular serif-xl-regular-responsive">
                 Thank you Hinge! We're getting married in a few months!
               </p>
-              <p class="sans-base-medium">Kathryn B. and Nik N.</p>
+              <p class="sans-base-medium sans-base-medium-responsive">
+                Kathryn B. and Nik N.
+              </p>
             </div>
-
             <div class="quote-slide" id="slide-3">
               <img class="white-svg" src="images/citation.svg" alt="citation" />
-              <p class="serif-xl-regular">
-                Hinge's prompts really made the difference?I felt like I got a
+              <p class="serif-xl-regular serif-xl-regular-responsive">
+                Hinge's prompts really made the difference. I felt like I got a
                 good sense of a guy's vibe from his answers, and it was easy to
                 jump right into a real conversation.
               </p>
-              <p class="sans-base-medium">Diana.V</p>
+              <p class="sans-base-medium sans-base-medium-responsive">
+                Diana V.
+              </p>
             </div>
           </div>
           <div class="progress-container">
@@ -243,7 +253,7 @@
       </div>
 
       <div class="main-container bg-black target">
-        <div class="py-12 ml-100 mb-100 border-bottom mt-70">
+        <div class="content-container py-12 ml-100 mb-100 border-bottom mt-70">
           <div class="sans-base-medium text-light-purple">Press</div>
           <h2 class="serif-4xl-regular-white mt-20">Hinge in the headlines</h2>
           <p class="sans-base-regular fs-16">
@@ -254,152 +264,116 @@
       </div>
     </main>
 
-    <!-- Start of bottom footer-->
-    <footer class="bg-black pb-14 pt-6 text-white">
-      <!-- Start of main footer container-->
-      <div class="beh†llare flex mt-100">
-        <!-- Start of logo footer container-->
-        <div style="margin-top: -50px">
-          <a href="#"
-            ><img
-              id="logoStyleBlack"
-              class="md:block"
-              src="images/hinge-logo.png"
-              alt="hinge-logo"
-              width="90"
-              height="45"
-          /></a>
-          <div class="flex items-center mt-4">
-            <div class="text-stone-50 fs-14 mr-16">&copy; 2024 Hinge Inc.</div>
+    <footer
+      class="bg-black pb-14 pt-6 text-white"
+      style="display: flex; justify-content: space-evenly"
+    >
+      <div class="headers-container order-first order-last">
+        <a class="hide" href="#"
+          ><img
+            id="logoStyleBlack"
+            class="md:block"
+            src="images/hinge-logo.png"
+            alt="hinge-logo"
+            width="90"
+            height="45"
+        /></a>
+        <div class="flex items-center mt-4">
+          <div class="text-stone-50 fs-14 mr-16">&copy; 2024 Hinge Inc.</div>
 
-            <div data-focus-lock-disabled="disabled">
-              <div class="dropdown">
-                <button id="dropdownButton" class="knapp">
-                  <img
-                    src="images/globe.jpg"
-                    alt="Twitter"
-                    style="width: 16px; height: 16px"
-                  />Languages
-                </button>
+          <div data-focus-lock-disabled="disabled">
+            <div class="dropdown">
+              <button id="dropdownButton" class="knapp">Languages</button>
 
-                <div class="dropdown-content" id="dropdownList">
-                  <ul
-                    id="dropdown-list"
-                    role="menu"
-                    aria-labelledby="localizationButton"
-                  >
-                    <li id="en-us" role="option" aria-selected="false">
-                      <a data-locale="en-us" href="https://hinge.co/mission"
-                        >English (US)</a
-                      >
-                    </li>
-                    <li id="da-dk" role="option" aria-selected="false">
-                      <a
-                        data-locale="da-dk"
-                        href="https://hinge.co/da-dk/mission"
-                        >Danish</a
-                      >
-                    </li>
-                    <li id="nl-nl" role="option" aria-selected="false">
-                      <a
-                        data-locale="nl-nl"
-                        href="https://hinge.co/nl-nl/mission"
-                        >Dutch</a
-                      >
-                    </li>
-                    <li id="en-gb" role="option" aria-selected="false">
-                      <a
-                        data-locale="en-gb"
-                        href="https://hinge.co/en-gb/mission"
-                        >English (UK)</a
-                      >
-                    </li>
-                    <li id="fi-fi" role="option" aria-selected="false">
-                      <a
-                        data-locale="fi-fi"
-                        href="https://hinge.co/fi-fi/mission"
-                        >Finnish</a
-                      >
-                    </li>
-                    <li id="fr-fr" role="option" aria-selected="false">
-                      <a
-                        data-locale="fr-fr"
-                        href="https://hinge.co/fr-fr/mission"
-                        >French</a
-                      >
-                    </li>
-                    <li id="de-de" role="option" aria-selected="false">
-                      <a
-                        data-locale="de-de"
-                        href="https://hinge.co/de-de/mission"
-                        >German</a
-                      >
-                    </li>
-                    <li id="de-at" role="option" aria-selected="false">
-                      <a
-                        data-locale="de-at"
-                        href="https://hinge.co/de-at/mission"
-                        >German (Austrian)</a
-                      >
-                    </li>
-                    <li id="de-ch" role="option" aria-selected="false">
-                      <a
-                        data-locale="de-ch"
-                        href="https://hinge.co/de-ch/mission"
-                        >German (Swiss)</a
-                      >
-                    </li>
-                    <li id="it-it" role="option" aria-selected="false">
-                      <a
-                        data-locale="it-it"
-                        href="https://hinge.co/it-it/mission"
-                        >Italian</a
-                      >
-                    </li>
-                    <li id="no-no" role="option" aria-selected="false">
-                      <a
-                        data-locale="no-no"
-                        href="https://hinge.co/no-no/mission"
-                        >Norwegian</a
-                      >
-                    </li>
-                    <li id="pt-pt" role="option" aria-selected="false">
-                      <a
-                        data-locale="pt-pt"
-                        href="https://hinge.co/pt-pt/mission"
-                        >Portuguese</a
-                      >
-                    </li>
-                    <li id="es-es" role="option" aria-selected="false">
-                      <a
-                        data-locale="es-es"
-                        href="https://hinge.co/es-es/mission"
-                        >Spanish</a
-                      >
-                    </li>
-                    <li id="es-us" role="option" aria-selected="false">
-                      <a
-                        data-locale="es-us"
-                        href="https://hinge.co/es-us/mission"
-                        >Spanish (US)</a
-                      >
-                    </li>
-                    <li id="sv-se" role="option" aria-selected="true">
-                      <a
-                        data-locale="sv-se"
-                        href="https://hinge.co/sv-se/mission"
-                        ><span class="mr-2">?</span>Swedish</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+              <div class="dropdown-content" id="dropdownList">
+                <ul
+                  id="dropdown-list"
+                  role="menu"
+                  aria-labelledby="localizationButton"
+                >
+                  <li id="en-us" role="option" aria-selected="false">
+                    <a data-locale="en-us" href="https://hinge.co/mission"
+                      >English (US)</a
+                    >
+                  </li>
+                  <li id="da-dk" role="option" aria-selected="false">
+                    <a data-locale="da-dk" href="https://hinge.co/da-dk/mission"
+                      >Danish</a
+                    >
+                  </li>
+                  <li id="nl-nl" role="option" aria-selected="false">
+                    <a data-locale="nl-nl" href="https://hinge.co/nl-nl/mission"
+                      >Dutch</a
+                    >
+                  </li>
+                  <li id="en-gb" role="option" aria-selected="false">
+                    <a data-locale="en-gb" href="https://hinge.co/en-gb/mission"
+                      >English (UK)</a
+                    >
+                  </li>
+                  <li id="fi-fi" role="option" aria-selected="false">
+                    <a data-locale="fi-fi" href="https://hinge.co/fi-fi/mission"
+                      >Finnish</a
+                    >
+                  </li>
+                  <li id="fr-fr" role="option" aria-selected="false">
+                    <a data-locale="fr-fr" href="https://hinge.co/fr-fr/mission"
+                      >French</a
+                    >
+                  </li>
+                  <li id="de-de" role="option" aria-selected="false">
+                    <a data-locale="de-de" href="https://hinge.co/de-de/mission"
+                      >German</a
+                    >
+                  </li>
+                  <li id="de-at" role="option" aria-selected="false">
+                    <a data-locale="de-at" href="https://hinge.co/de-at/mission"
+                      >German (Austrian)</a
+                    >
+                  </li>
+                  <li id="de-ch" role="option" aria-selected="false">
+                    <a data-locale="de-ch" href="https://hinge.co/de-ch/mission"
+                      >German (Swiss)</a
+                    >
+                  </li>
+                  <li id="it-it" role="option" aria-selected="false">
+                    <a data-locale="it-it" href="https://hinge.co/it-it/mission"
+                      >Italian</a
+                    >
+                  </li>
+                  <li id="no-no" role="option" aria-selected="false">
+                    <a data-locale="no-no" href="https://hinge.co/no-no/mission"
+                      >Norwegian</a
+                    >
+                  </li>
+                  <li id="pt-pt" role="option" aria-selected="false">
+                    <a data-locale="pt-pt" href="https://hinge.co/pt-pt/mission"
+                      >Portuguese</a
+                    >
+                  </li>
+                  <li id="es-es" role="option" aria-selected="false">
+                    <a data-locale="es-es" href="https://hinge.co/es-es/mission"
+                      >Spanish</a
+                    >
+                  </li>
+                  <li id="es-us" role="option" aria-selected="false">
+                    <a data-locale="es-us" href="https://hinge.co/es-us/mission"
+                      >Spanish (US)</a
+                    >
+                  </li>
+                  <li id="sv-se" role="option" aria-selected="true">
+                    <a data-locale="sv-se" href="https://hinge.co/sv-se/mission"
+                      ><span class="mr-2">?</span>Swedish</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- End of logo footer container-->
+      </div>
 
-        <!-- Start of list index footer container-->
+      <div class="headers-container">
         <div class="mt-20 ml-350">
           <div class="block text-stone-50 mb-12">Index</div>
           <a class="block sans-base-medium" href="#">Mission</a>
@@ -425,18 +399,17 @@
             </a>
           </div>
         </div>
-        <!-- End of list index footer container-->
-
-        <!-- Start of list index footer container-->
-        <div class="mt-20 ml-100">
+      </div>
+      <div class="headers-container">
+        <div class="mt-20">
           <div class="block text-stone-50 mb-12">Resources</div>
           <a class="block sans-base-medium" href="#">Safe dating tips</a>
           <a class="block sans-base-medium" href="#">FAQ</a>
           <a class="block sans-base-medium" href="#">Trust and safety</a>
         </div>
-        <!-- End of list index footer container-->
-        <!-- Start of list index footer container-->
-        <div class="mt-20 ml-100">
+      </div>
+      <div class="headers-container">
+        <div class="mt-20">
           <div class="block text-stone-50 mb-12">Legal</div>
           <a class="block sans-base-medium" href="#">Security</a>
           <a class="block sans-base-medium" href="#">Terms</a>
@@ -448,11 +421,9 @@
             Privacy Policy</a
           >
         </div>
-        <!-- End of list index footer container-->
       </div>
-      <!-- End of main footer container-->
     </footer>
-    <!-- End of bottom footer-->
+
     <script src="scripts/dropdown.js"></script>
     <script src="scripts/sidebar.js"></script>
     <script src="scripts/slider.js"></script>

@@ -275,11 +275,6 @@
 .inline-block {
   display: inline-block;
 }
-
-.order-last {
-  order: 9999;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -514,5 +509,35 @@
   .py-160 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+/* Medium screens (tablets, etc.) */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 4rem;
+    margin-right: 300px;
+    margin-bottom: 150px;
+  }
+}
+
+
+/* Small screens (phones, etc.) */
+@media (max-width: 768px) {
+  .right-aligned-container {
+    justify-content: center;
+  }
+  .heading {
+    font-size: 4rem;
+    margin-right: 0;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 4rem;
+    margin-bottom: 50px;
   }
 }
