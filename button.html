@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directional Aware CSS Button</title>
+    <style>
+      :root {
+        --spring: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        --lh: 1em; /* Assuming 1em is the line height */
+      }
+
+      button {
+        position: relative;
+        font-size: 1.5em;
+        border: 2px solid #000;
+        background: #fff;
+        padding: 0em 1em;
+        cursor: pointer;
+        overflow: hidden;
+        color: #000;
+        margin: 1em;
+      }
+
+      button span {
+        display: block;
+        transition: translate 0.5s var(--spring),
+          text-shadow 0.875s var(--spring);
+      }
+
+      button.down:has(span:nth-of-type(2):hover) {
+        --y: calc(-1 * var(--lh));
+      }
+
+      button.up:has(span:nth-of-type(2):hover) {
+        --y: var(--lh);
+      }
+
+      button span:first-of-type {
+        translate: 0 var(--y, 0);
+        text-shadow: 0 var(--lh) currentColor,
+          0 calc(-1 * var(--lh)) currentColor;
+      }
+
+      button span:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="down">
+      <span>Hover 1</span>
+      <span>Hover 1</span>
+    </button>
+    <br /><br />
+    <button class="up">
+      <span>Hover 2</span>
+      <span>Hover 2</span>
+    </button>
+  </body>
+</html>
