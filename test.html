@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div-img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 250px;
+      }
+      img {
+        transition: transform 0.2s;
+        width: 300px; /* Example fixed width */
+        height: 200px; /* Example fixed height */
+
+        background-color: rgb(173, 173, 237);
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      .height:hover {
+        transform: scaleY(2.5);
+      }
+      .width:hover {
+        transform: scaleX(2.5);
+      }
+      .normal:hover {
+        transform: scale(2.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-img">
+      <img
+        class="width"
+        src="https://via.placeholder.com/300x200"
+        alt="image"
+      />
+    </div>
+
+    <div class="div-img">
+      <img
+        class="height"
+        src="https://via.placeholder.com/300x200"
+        alt="image"
+      />
+    </div>
+
+    <div class="div-img">
+      <img
+        class="normal"
+        src="https://via.placeholder.com/300x200"
+        alt="image"
+      />
+    </div>
+  </body>
+</html>
