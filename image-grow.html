@@ -13,21 +13,24 @@
       }
       img {
         transition: transform 0.2s;
-        width: 300px; /* Example fixed width */
-        height: 200px; /* Example fixed height */
-
+        width: 300px; /* Exempel fast bredd */
+        height: 200px; /* Exempel fast h”jd */
         background-color: rgb(173, 173, 237);
         border-radius: 10px;
         border: 1px solid black;
+        object-fit: cover; /* Beh†ll bildens f”rh†llande */
       }
       .height:hover {
         transform: scaleY(2.5);
+        transform-origin: center; /* Skalning fr†n centrum */
       }
       .width:hover {
         transform: scaleX(2.5);
+        transform-origin: center; /* Skalning fr†n centrum */
       }
       .normal:hover {
         transform: scale(2.5);
+        transform-origin: center; /* Skalning fr†n centrum */
       }
     </style>
   </head>
